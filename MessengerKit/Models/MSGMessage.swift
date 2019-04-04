@@ -24,11 +24,15 @@ public class MSGMessage: NSObject{
     /// The time that the message was sent.
     public let sentAt: Date
     
-    public init(id: Int, body: MSGMessageBody, user: MSGUser, sentAt: Date) {
+    /// Message is seen by other or not
+    public var seen: Bool
+    
+    public init(id: Int, body: MSGMessageBody, user: MSGUser, sentAt: Date, seen: Bool = false) {
         self.id = id
         self.body = body
         self.user = user
         self.sentAt = sentAt
+        self.seen = seen
     }
     
 }

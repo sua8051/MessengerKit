@@ -59,6 +59,9 @@ public protocol MSGMessengerStyle {
     
     /// Color of links on the incoming messages
     var incomingLinkColor: UIColor { get }
+    
+    /// Color of unseen outcoming message
+    var unseenBubbleColor: UIColor { get }
 
     /// Calculates the size of the cell for a given message
     ///

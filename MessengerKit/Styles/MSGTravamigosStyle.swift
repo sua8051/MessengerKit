@@ -9,6 +9,8 @@
 /// Styles the messenger view to be similar to that used in Travamigos.
 public struct MSGTravamigosStyle: MSGMessengerStyle {
     
+    public var unseenBubbleColor: UIColor = .red
+    
     public var collectionView: MSGCollectionView.Type = MSGTravCollectionView.self
     
     public var inputView: MSGInputView.Type = MSGTravInputView.self

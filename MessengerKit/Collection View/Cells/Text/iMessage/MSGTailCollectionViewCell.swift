@@ -31,6 +31,10 @@ open class MSGTailCollectionViewCell: MSGMessageCell {
             bubble.font = style.font
             bubble.backgroundImageView.tintColor = message.user.isSender ? style.outgoingBubbleColor : style.incomingBubbleColor
             bubble.textColor = message.user.isSender ? style.outgoingTextColor : style.incomingTextColor
+            
+            if !message.seen && message.user.isSender {
+                bubble.backgroundImageView.tintColor = style.unseenBubbleColor
+            }
         }
     }
     

@@ -8,6 +8,7 @@
 
 /// Styles the `MSGMessengerViewController` to be similar in style to iMessage.
 public struct MSGIMessageStyle: MSGMessengerStyle {
+    public var unseenBubbleColor: UIColor = .red
     
     public var collectionView: MSGCollectionView.Type = MSGImessageCollectionView.self
     

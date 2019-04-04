@@ -9,6 +9,7 @@
 import MessengerKit
 
 struct CustomStyle: MSGMessengerStyle {
+    var unseenBubbleColor: UIColor = .red
     
     var collectionView: MSGCollectionView.Type = CustomCollectionView.self
     

@@ -28,6 +28,7 @@ class ViewController: MSGMessengerViewController {
 //        style.incomingTextColor = .yellow
 //        style.backgroundColor = .orange
 //        style.inputViewBackgroundColor = .purple
+        style.unseenBubbleColor = .blue
         return style
     }
     
@@ -39,7 +40,7 @@ class ViewController: MSGMessengerViewController {
             ],
             [
                 MSGMessage(id: 2, body: .text("Yeah sure, gimme 5"), user: steve, sentAt: Date()),
-                MSGMessage(id: 3, body: .text("Okay ready when you are"), user: steve, sentAt: Date())
+                MSGMessage(id: 3, body: .text("Okay ready when you are"), user: steve, sentAt: Date(), seen: true)
             ],
             [
                 MSGMessage(id: 4, body: .text("Awesome 😁"), user: tim, sentAt: Date()),
